@@ -33,6 +33,14 @@
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
+        #cok-satan{
+            background-color: #c1fdb5; /* yellow-900 */
+            color: rgb(22, 90, 44);
+        }
+        #az-satan{
+            background-color: #ffcbcb; /* yellow-900 */
+            color: rgb(255, 0, 0);
+        }
     </style>
 </head>
 <body class="p-4 md:p-8">
@@ -66,93 +74,158 @@
             "ZN": {
                 "Babet": {
                     mainColors: ["WHITE", "MINK", "BLACK"], secondaryColors: ["RED", "BLUE", "BEIGE"], rejectedColors: ["OLIVE", "BRONZE", "YELLOW", "SILVER"], boxCount: 125, pairCount: 1000, companies: ["HEYA", "BELLA"], assortment: { "36": 1, "37": 2, "38": 2, "39": 2, "40": 1 },
-                    bestSeller: { image: "pictures/zn/HE1716.png", company: "HEYA", model: "HE1716", value1: 79, value2: 1, color: "MINK" },
-                    leastSeller: { image: "pictures/zn/NA20.png", company: "NIZ NILAYDA", model: "NA20", value1: 10, value2: 54, color: "SILVER" }
+                    bestSeller: [
+                        { image: "pictures/zn/HE1716.png", company: "HEYA", model: "HE1716", value1: 79, value2: 1, color: "MINK" },
+                        { image: "pictures/zn/BL101.png", company: "BELLA", model: "BL201", value1: 77, value2: 3, color: "BLACK" },
+                        { image: "pictures/zn/HE1729.png", company: "HEYA", model: "HE1729", value1: 72, value2: 8, color: "BEIGE" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/zn/NA20.png", company: "NIZ NILAYDA", model: "NA20", value1: 10, value2: 54, color: "SILVER" },
+                        { image: "pictures/zn/LA2515.png", company: "LA BELLINI", model: "LA2515", value1: 22, value2: 58, color: "OLIVE" },
+                        { image: "pictures/zn/BL108.png", company: "BELLA", model: "BL108", value1: 17, value2: 63, color: "YELLOW" }
+                    ]
                 },
                 "Bosonojki": {
                     mainColors: ["WHITE", "BEIGE", "BLACK"], secondaryColors: ["TABA", "MINK", "PUDRA", "OLIVE", "BROWN-SUET"], rejectedColors: ["BLACK RUGAN", "BORDO RUGAN", "MINK RUGAN", "KUM", "SILVER", "BLACK SUET", "ORANGE"], boxCount: 250, pairCount: 2000, companies: ["HEYA", "NOD TREND", "BELLA"], assortment: { "36": 2, "37": 2, "38": 2, "39": 1, "40": 1},
-                    bestSeller: { image: "pictures/zn/DV4846.png", company: "DIVA CLUP", model: "DV4846", value1: 74, value2: 22, color: "BROWN SUET" },
-                    leastSeller: { image: "pictures/zn/ND1030.png", company: "NOD TREND", model: "ND1030", value1: 6, value2: 58, color: "MINK" }
+                    bestSeller: [
+                        { image: "pictures/zn/DV4846.png", company: "DIVA CLUP", model: "DV4846", value1: 74, value2: 22, color: "BROWN SUET" },
+                        { image: "pictures/zn/HE2844.png", company: "HEYA", model: "HE2844", value1: 65, value2: 15, color: "PUDRA" },
+                        { image: "pictures/zn/HE2998.png", company: "HEYA", model: "HE2998", value1: 66, value2: 4, color: "OLIVE" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/zn/ND1030.png", company: "NOD TREND", model: "ND1030", value1: 6, value2: 58, color: "MINK" },
+                        { image: "pictures/zn/DN7073.png", company: "DGN", model: "DN7073", value1: 12, value2: 52, color: "SILVER" },
+                        { image: "pictures/zn/RL144.png", company: "MARIO ROSSI", model: "RL144", value1: 7, value2: 57, color: "BEIGE" }
+                    ]
                 },
                 "Casual": {
                     mainColors: ["WHITE", "MINK"], secondaryColors: ["GREY", "BLACK"], rejectedColors: ["BEIGE", "WHITE-BEIGE", "WHITE-LEOPARD", "BLACK-LEOPARD", "TABA SUET"], boxCount: 188, pairCount: 1500, companies: ["NIZ NILAYDA", "DEXCOR", "VURAL", "IMPERO"], assortment: { "36": 1, "37": 2, "38": 3, "39": 1, "40": 1},
-                    bestSeller: { image: "pictures/zn/IP2530.png", company: "IMPERO", model: "IP2530", value1: 75, value2: 21, color: "WHITE" },
-                    leastSeller: { image: "pictures/zn/LA7020.png", company: "LA BELLINI", model: "LA7020", value1: 6, value2: 74, color: "WHITE" }
+                    bestSeller: [
+                        { image: "pictures/zn/IP2530.png", company: "IMPERO", model: "IP2530", value1: 75, value2: 21, color: "WHITE" },
+                        { image: "pictures/zn/DX1950.png", company: "DEXCOR", model: "DX1950", value1: 77, value2: 3, color: "WHITE" },
+                        { image: "pictures/zn/DX1075.png", company: "DEXCOR", model: "DX1075", value1: 62, value2: 18, color: "WHITE" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/zn/LA7020.png", company: "LA BELLINI", model: "LA7020", value1: 6, value2: 74, color: "WHITE" },
+                        { image: "pictures/zn/NA1428.png", company: "NIZ NILAYDA", model: "NA1428", value1: 13, value2: 67, color: "WHITE-BEIGE" },
+                        { image: "pictures/zn/NA2002.png", company: "NIZ NILAYDA", model: "NA2002", value1: 28, value2: 52, color: "BEIGE" }
+                    ]
                 },
                 "Comfort": {
                     mainColors: ["WHITE", "MINK"], secondaryColors: ["GREY", "BEIGE"], rejectedColors: ["BEIGE VE BLACK (1'ER MODEL)"], boxCount: 125, pairCount: 1000, companies: ["NOD TREND", "DULLY"], assortment: { "36": 1, "37": 2, "38": 2, "39": 2, "40": 1 },
-                    bestSeller: { image: "pictures/zn/ND6401-1.png", company: "NOD TREND", model: "ND6401-1", value1: 96, value2: 0, color: "MINK" },
-                    leastSeller: { image: "pictures/zn/DL5709.png", company: "DULLY", model: "DL5709", value1: 47, value2: 33, color: "BLACK" }
+                    bestSeller: [
+                        { image: "pictures/zn/ND6401-1.png", company: "NOD TREND", model: "ND6401-1", value1: 96, value2: 0, color: "MINK" },
+                        { image: "pictures/zn/ND1414-3.png", company: "NOD TREND", model: "ND1414-3", value1: 85, value2: 11, color: "WHITE" },
+                        { image: "pictures/zn/ND6522.png", company: "NOD TREND", model: "ND6522", value1: 71, value2: 9, color: "MINK" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/zn/DL5709.png", company: "DULLY", model: "DL5709", value1: 47, value2: 33, color: "BLACK" },
+                        { image: "pictures/zn/ND6520.png", company: "NOD TREND", model: "ND6520", value1: 61, value2: 19, color: "GREY" }
+                    ]
                 },
                 "Klasik": {
                     mainColors: ["BLACK", "WHITE"], secondaryColors: ["MINK", "BEIGE"], rejectedColors: ["PUDRA", "PLATIN"], boxCount: 250, pairCount: 2000, companies: ["DULLY", "BELLA", "NOD TREND"], assortment: { "36": 1, "37": 2, "38": 3, "39": 1, "40": 1, "41": 5, "42": 3 },
-                    bestSeller: { image: "pictures/zn/DL5652.png", company: "DULLY", model: "DL5652", value1: 60, value2: 20, color: "WHITE" },
-                    leastSeller: { image: "pictures/zn/DL5671.png", company: "DULLY", model: "DL5671", value1: 12, value2: 68, color: "WHITE" }
+                    bestSeller: [
+                        { image: "pictures/zn/DL5652.png", company: "DULLY", model: "DL5652", value1: 60, value2: 20, color: "WHITE" },
+                        { image: "pictures/zn/DL5687.png", company: "DULLY", model: "DL5687", value1: 58, value2: 22, color: "BLACK" },
+                        { image: "pictures/zn/NA40218.png", company: "NIZ NILAYDA", model: "NA40218", value1: 62, value2: 18, color: "BLACK" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/zn/DL5671.png", company: "DULLY", model: "DL5671", value1: 12, value2: 68, color: "WHITE" },
+                        { image: "pictures/zn/DL5721.png", company: "DULLY", model: "DL5721", value1: 23, value2: 57, color: "MINK/BLACK" },
+                        { image: "pictures/zn/DL5704.png", company: "DULLY", model: "DL5704", value1: 23, value2: 57, color: "PUDRA" }
+                    ]
                 },
                 "Sandalet": {
                     mainColors: ["BLACK", "WHITE", "MINK", "BEIGE", "TABA SUET"], secondaryColors: ["MINK SUET", "BLACK-BLACK R", "TABA-LEOPARD", "LACK ST-BLACK R", "MINK-MINK RG", "OLIVE SUET", "FUJI", "BROWN"], rejectedColors: ["PITON", "WHITE-BLACK", "CAPUCCINO", "ORANGE", "PINK", "GREY SUET", "BLUE", "GREY", "SILVER", "VIZON", "SAX BLUE", "TABA-BLACK", "BLACK-SUET", "HAKI", "LILA", "BEIGE RUGAN", "ZEBRA"], boxCount: 563, pairCount: 4500, companies: ["BELLA", "SAMAS (COMFORT)", "ILOZ", "IMPERO", "HEYA"], assortment: { "36": 2, "37": 2, "38": 2, "39": 1, "40": 1, "41": 6, "42": 2 },
-                    bestSeller: { image: "pictures/zn/BL45205.png", company: "BELLA", model: "BL45205", value1: 82, value2: 14, color: "MINK SUET" },
-                    leastSeller: { image: "pictures/zn/EA3598.png", company: "PESELA", model: "EA3598", value1: 7, value2: 57, color: "SIYAH-BEYAZ" }
+                    bestSeller: [
+                        { image: "pictures/zn/BL45205.png", company: "BELLA", model: "BL45205", value1: 82, value2: 14, color: "MINK SUET" },
+                        { image: "pictures/zn/BL603.png", company: "BELLA", model: "BL603", value1: 57, value2: 13, color: "BLACK" },
+                        { image: "pictures/zn/BL38.png", company: "BELLA", model: "BL38", value1: 75, value2: 5, color: "TABA" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/zn/EA3943.png", company: "PESELA", model: "EA3943", value1: 8, value2: 56, color: "ZEBRA" },
+                        { image: "pictures/zn/ND11704.png", company: "NOD TREND", model: "ND11704", value1: 15, value2: 65, color: "BEIGE RUGAN" },
+                        { image: "pictures/zn/RM59086.png", company: "MARIO ROSSI", model: "RM59086", value1: 8, value2: 72, color: "GREY SUET" }
+                    ]
                 },
                 "Terlik": {
-                    mainColors: ["BLACK", "WHITE", "TABA", "MINK", "BEIGE"], 
-                    secondaryColors: ["BROWN", "CAMEL SUET", "MINK SUET", "BROWN SUET", "ORANGE", "BLACK RUGAN"], 
-                    rejectedColors: ["RED", "GREEN", "BRONZE", "GREEN RUGAN", "RED-SILVER", "BEIGE-LEOPARD", "PUDRA"], 
-                    boxCount: 438, pairCount: 3500, companies: ["DIVA CLUP", "ILOZ", "VURAL"], 
-                    assortment: { "36": 2, "37": 2, "38": 2, "39": 1, "40": 1, "41": 3, "42": 5 },
-                    bestSeller: { image: "pictures/zn/DM1911.png", company: "DAMLAX", model: "DM1911", value1: 90, value2: 6, color: "CAMEL SUET" },
-                    leastSeller: { image: "pictures/zn/BS1166.png", company: "ELLA COMFORT", model: "BS1166", value1: 12, value2: 52, color: "RED" }
+                    mainColors: ["BLACK", "WHITE", "TABA", "MINK", "BEIGE"], secondaryColors: ["BROWN", "CAMEL SUET", "MINK SUET", "BROWN SUET", "ORANGE", "BLACK RUGAN"], rejectedColors: ["RED", "GREEN", "BRONZE", "GREEN RUGAN", "RED-SILVER", "BEIGE-LEOPARD", "PUDRA"], boxCount: 438, pairCount: 3500, companies: ["DIVA CLUP", "ILOZ", "VURAL"], assortment: { "36": 2, "37": 2, "38": 2, "39": 1, "40": 1, "34": 3, "35": 2, "41": 3, "42": 5 },
+                    bestSeller: [
+                        { image: "pictures/zn/DM1911.png", company: "DAMLAX", model: "DM1911", value1: 90, value2: 6, color: "CAMEL SUET" },
+                        { image: "pictures/zn/VR6020-1.png", company: "VURAL", model: "VR6020-1", value1: 79, value2: 1, color: "TABA" },
+                        { image: "pictures/zn/DV4858.png", company: "DIVA CLUP", model: "DV4858", value1: 77, value2: 19, color: "BEIGE" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/zn/BS1166.png", company: "BELLA COMFORT", model: "BS1166", value1: 12, value2: 52, color: "RED" },
+                        { image: "pictures/zn/DM25110.png", company: "DAMLAX", model: "DM25110", value1: 7, value2: 73, color: "BEIGE-LEOPARD" },
+                        { image: "pictures/zn/IP601.png", company: "IMPERO", model: "IP601", value1: 15, value2: 65, color: "BEIGE" }
+                    ]
                 }
             },
             "MR": {
                 "Casual": {
-                    mainColors: ["BLACK", "NAVY", "NAVY NUBUK"], 
-                    secondaryColors: ["NAVY SUET", "WHITE-NAVY"], 
-                    rejectedColors: ["MINK", "MINK NUBUK", "WHITE-GREY", "GREEN", "HAKI-GREEN", "MINK SUET-MINK", "TABA SUET", "BLACK NUBUK", "TABA NUBUK", "HAKI", "GREY SUET-GREY"], 
-                    boxCount: 188, pairCount: 1500, 
-                    companies: ["PATI", "MATIAT", "SAILORS"], 
-                    assortment: { "39": 1, "40": 2, "41": 2, "42": 2, "43": 1, "44": 6,"45": 2 },
-                    bestSeller: { image: "pictures/mr/PA9726.png", 
-                    company: "PATI", model: "PA9726", value1: 78, value2: 18, color: "NAVY" },
-                    leastSeller: { image: "pictures/mr/GO7011.png", company: "SIGOTTO", model: "GO7011", value1: 3, value2: 77, color: "BROWN" }
+                    mainColors: ["BLACK", "NAVY", "NAVY NUBUK"], secondaryColors: ["NAVY SUET", "WHITE-NAVY"], rejectedColors: ["MINK", "MINK NUBUK", "WHITE-GREY", "GREEN", "HAKI-GREEN", "MINK SUET-MINK", "TABA SUET", "BLACK NUBUK", "TABA NUBUK", "HAKI", "GREY SUET-GREY"], boxCount: 188, pairCount: 1500, companies: ["PATI", "MATIAT", "SAILORS"], assortment: { "39": 1, "40": 2, "41": 2, "42": 2, "43": 1, "44": 6,"45": 2 },
+                    bestSeller: [
+                        { image: "pictures/mr/PA9726.png", company: "PATI", model: "PA9726", value1: 78, value2: 18, color: "NAVY" },
+                        { image: "pictures/mr/SI3163.png", company: "SAILORS", model: "SI3163", value1: 53, value2: 62, color: "NAVY" },
+                        { image: "pictures/mr/MI600.png", company: "MATIAT", model: "MI600", value1: 50, value2: 70, color: "BEIGE" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/mr/GO7011.png", company: "SIGOTTO", model: "GO7011", value1: 3, value2: 77, color: "BROWN" },
+                        { image: "pictures/mr/AH415.png", company: "AVCI", model: "AH415", value1: 6, value2: 58, color: "GREY" },
+                        { image: "pictures/mr/SI3271.png", company: "SAILORS", model: "SI3271", value1: 23, value2: 71, color: "BLACK" }
+                    ]
                 },
                 "Comfort": {
-                    mainColors: ["BEIGE NUBUK", "BLACK", "BROWN"], 
-                    secondaryColors: [], rejectedColors: ["BROWN NUBUK", "BEIGE", "WHITE"], 
-                    boxCount: 88, pairCount: 700, companies: ["KOCEL"], 
-                    assortment: { "40": 3, "41": 2, "42": 2, "43": 1, "44": 6, "45": 2 },
-                    bestSeller: { image: "pictures/mr/KC2318.png", company: "KOCEL", model: "KC2318", value1: 71, value2: 25, color: "BEIGE NUBUK" },
-                    leastSeller: { image: "pictures/mr/VGM6574.png", company: "VOYAGER", model: "VGM6574", value1: 11, value2: 69, color: "WHITE" }
+                    mainColors: ["BEIGE NUBUK", "BLACK", "BROWN"], secondaryColors: [], rejectedColors: ["BROWN NUBUK", "BEIGE", "WHITE"], boxCount: 88, pairCount: 700, companies: ["KOCEL"], assortment: { "40": 3, "41": 2, "42": 2, "43": 1, "44": 6, "45": 2 },
+                    bestSeller: [
+                        { image: "pictures/mr/KC2318.png", company: "KOCEL", model: "KC2318", value1: 71, value2: 25, color: "BEIGE NUBUK" },
+                        { image: "pictures/mr/KC70995.png", company: "KOCEL", model: "KC70995", value1: 30, value2: 66, color: "BLACK NUBUK" },
+                        { image: "pictures/mr/KC2307.png", company: "KOCEL", model: "KC2307", value1: 26, value2: 70, color: "BROWN" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/mr/VGM6574.png", company: "VOYAGER", model: "VGM6574", value1: 11, value2: 69, color: "WHITE" }
+                    ]
                 },
                 "Klasik": {
-                    mainColors: ["BLACK", "BROWN"], 
-                    secondaryColors: ["BEIGE", "TABA"], 
-                    rejectedColors: [], 
-                    boxCount: 250, pairCount: 2000, 
-                    companies: ["PATI", "FREE FOOT", "AVCI"], 
-                    assortment: { "39": 1, "40": 2, "41": 2, "42": 2, "43": 1, "44": 6, "45": 2 },
-                    bestSeller: { image: "pictures/mr/FR7051.png", company: "FREE FOOT", model: "FR7051", value1: 121, value2: 20, color: "BLACK" },
-                    leastSeller: { image: "pictures/mr/SR710.png", company: "TESSERA", model: "SR710", value1: 1, value2: 79, color: "BROWN" }
+                    mainColors: ["BLACK", "BROWN"], secondaryColors: ["BEIGE", "TABA"], rejectedColors: [], boxCount: 250, pairCount: 2000, companies: ["PATI", "FREE FOOT", "AVCI"], assortment: { "39": 1, "40": 2, "41": 2, "42": 2, "43": 1, "44": 6, "45": 2 },
+                    bestSeller: [
+                        { image: "pictures/mr/FR7051.png", company: "FREE FOOT", model: "FR7051", value1: 121, value2: 20, color: "BLACK" },
+                        { image: "pictures/mr/FR215340.png", company: "FREE FOOT", model: "FR215340", value1: 66, value2: 24, color: "BROWN NUBUK" },
+                        { image: "pictures/mr/PA150.png", company: "PATI", model: "PA150", value1: 54, value2: 55, color: "BLACK" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/mr/SR710.png", company: "TESSERA", model: "SR710", value1: 1, value2: 79, color: "BROWN" },
+                        { image: "pictures/mr/SR111.png", company: "TESSERA", model: "SR111", value1: 4, value2: 76, color: "BROWN" },
+                        { image: "pictures/mr/SR949.png", company: "TESSERA", model: "SR949", value1: 13, value2: 67, color: "BLACK" }
+                    ]
                 },
                 "Sandalet": {
-                    mainColors: ["BLACK", "BROWN", "NAVY"], 
-                    secondaryColors: ["BROWN SUET", "GREY SUET"], 
-                    rejectedColors: ["TABA"], 
-                    boxCount: 125, pairCount: 1000, 
-                    companies: ["INAN", "BERDANI"], 
-                    assortment: { "39": 1, "40": 1, "41": 2, "42": 3, "43": 1, "44": 6, "45": 2 },
-                    bestSeller: { image: "pictures/mr/NK641.png", company: "INAN", model: "NK641", value1: 70, value2: 26, color: "BLACK" },
-                    leastSeller: { image: "pictures/mr/BN950.png", company: "BERDANI", model: "BN950", value1: 16, value2: 80, color: "NAVY" }
+                    mainColors: ["BLACK", "BROWN", "NAVY"], secondaryColors: ["BROWN SUET", "GREY SUET"], rejectedColors: ["TABA"], boxCount: 125, pairCount: 1000, companies: ["INAN", "BERDANI"], assortment: { "39": 1, "40": 1, "41": 2, "42": 3, "43": 1, "44": 6, "45": 2 },
+                    bestSeller: [
+                        { image: "pictures/mr/NK3050.png", company: "INAN", model: "NK3050", value1: 71, value2: 25, color: "BLACK" },
+                        { image: "pictures/mr/NK641.png", company: "INAN", model: "NK641", value1: 70, value2: 26, color: "BLACK" },
+                        { image: "pictures/mr/NK114.png", company: "INAN", model: "NK114", value1: 68, value2: 28, color: "BLACK" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/mr/BN950.png", company: "BERDANI", model: "BN950", value1: 16, value2: 80, color: "NAVY" },
+                        { image: "pictures/mr/BN910.png", company: "BERDANI", model: "BN910", value1: 29, value2: 105, color: "BROWN" },
+                        { image: "pictures/mr/NK025.png", company: "INAN", model: "NK025", value1: 31, value2: 50, color: "TABA" }
+                    ]
                 },
                 "Terlik": {
-                    mainColors: ["BLACK", "NAVY", "MINK"], 
-                    secondaryColors: ["HAKI", "TABA", "BROWN"], 
-                    rejectedColors: ["BROWN MINK"], 
-                    boxCount: 150, pairCount: 1200, 
-                    companies: ["BERDANI", "INAN"], 
-                    assortment: { "39": 1, "40": 1, "41": 3, "42": 2, "43": 1, "44": 6, "45": 2 },
-                    bestSeller: { image: "pictures/mr/BN802.png", company: "BERDANI", model: "BN802", value1: 94, value2: 18, color: "BLACK" },
-                    leastSeller: { image: "pictures/mr/BN977.png", company: "BERDANI", model: "BN977", value1: 9, value2: 87, color: "TABA" }
+                    mainColors: ["BLACK", "NAVY", "MINK"], secondaryColors: ["HAKI", "TABA", "BROWN"], rejectedColors: ["BROWN MINK"], boxCount: 150, pairCount: 1200, companies: ["BERDANI", "INAN"], assortment: { "39": 1, "40": 1, "41": 3, "42": 2, "43": 1, "44": 6, "45": 2 },
+                    bestSeller: [
+                        { image: "pictures/mr/BN802.png", company: "BERDANI", model: "BN802", value1: 94, value2: 18, color: "BLACK" },
+                        { image: "pictures/mr/NK5060.png", company: "INAN", model: "NK5060", value1: 80, value2: 0, color: "BROWN SUET" },
+                        { image: "pictures/mr/BN814.png", company: "BERDANI", model: "BN814", value1: 82, value2: 14, color: "HAKI" }
+                    ],
+                    leastSeller: [
+                        { image: "pictures/mr/BN977.png", company: "BERDANI", model: "BN977", value1: 9, value2: 87, color: "TABA" },
+                        { image: "pictures/mr/BN965.png", company: "BERDANI", model: "BN965", value1: 17, value2: 95, color: "BLACK" },
+                        { image: "pictures/mr/NK530.png", company: "INAN", model: "NK530", value1: 10, value2: 86, color: "BLACK" }
+                    ]
                 }
             }
         };
@@ -186,59 +259,57 @@
                             </tr>`;
                 })
                 .join('');
-
-            const sellerCard = (seller, title) => `
-                <div class="border rounded-xl p-4 flex flex-col items-center gap-4 bg-gray-50">
-                    <h3 class="section-title w-full">${title}</h3>
-                    <img src="${seller.image}" alt="${seller.model}" class="rounded-lg w-full h-48 object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/757575?text=Resim+Yok';">
-                    <div class="w-full text-center">
-                        <p class="font-bold text-lg text-gray-800">${seller.company} - ${seller.model}</p>
-                        <p class="text-md text-gray-600">${seller.color}</p>
-                        <div class="flex justify-center gap-4 mt-2">
-                           <span class="text-sm font-semibold bg-green-100 text-green-800 px-3 py-1 rounded-full">${seller.value1}</span>
-                           <span class="text-sm font-semibold bg-blue-100 text-blue-800 px-3 py-1 rounded-full">${seller.value2}</span>
-                        </div>
-                    </div>
-                </div>`;
             
             dataDisplayContainer.style.opacity = 0;
             setTimeout(() => {
+                const createSingleSellerCard = (sellerData) => `
+                <div class="border rounded-xl p-4 flex flex-col items-center gap-4 bg-gray-50 h-full">
+                    <img src="${sellerData.image}" alt="${sellerData.model}" class="rounded-lg w-full h-48 object-cover shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/757575?text=Resim+Yok';">
+                    <div class="w-full text-center mt-auto pt-2">
+                        <p class="font-bold text-lg text-gray-800">${sellerData.company} - ${sellerData.model}</p>
+                        <p class="text-md text-gray-600">${sellerData.color}</p>
+                        <div class="flex justify-center gap-4 mt-2">
+                            <span class="text-sm font-semibold bg-green-100 text-green-800 px-3 py-1 rounded-full">${sellerData.value1}</span>
+                            <span class="text-sm font-semibold bg-blue-100 text-blue-800 px-3 py-1 rounded-full">${sellerData.value2}</span>
+                        </div>
+                    </div>
+                </div>`;
+
                 dataDisplayContainer.innerHTML = `
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                        <div class="lg:col-span-1 flex flex-col gap-6">
-                            <div>
-                                <h3 class="section-title mb-3">RENKLER</h3>
-                                <div class="grid grid-cols-2 gap-3">
-                                    <div>
-                                        <h4 class="font-semibold text-center text-gray-600 mb-2 pb-1 border-b">Ana Renkler</h4>
-                                        <ul class="grid grid-cols-1 gap-2">${createList(data.mainColors)}</ul>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold text-center text-gray-600 mb-2 pb-1 border-b">2. Renkler</h4>
-                                        <ul class="grid grid-cols-1 gap-2">${createList(data.secondaryColors)}</ul>
+                    <div class="space-y-8">
+                        <!-- TOP INFO ROW -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div class="flex flex-col gap-6">
+                                <div>
+                                    <h3 class="section-title mb-3">RENKLER</h3>
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div>
+                                            <h4 class="font-semibold text-center text-gray-600 mb-2 pb-1 border-b">Ana Renkler</h4>
+                                            <ul class="grid grid-cols-1 gap-2">${createList(data.mainColors)}</ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-center text-gray-600 mb-2 pb-1 border-b">2. Renkler</h4>
+                                            <ul class="grid grid-cols-1 gap-2">${createList(data.secondaryColors)}</ul>
+                                        </div>
                                     </div>
                                 </div>
+                                <div>
+                                    <h3 class="section-title mb-3">ALINMAYACAK RENKLER</h3>
+                                    <ul class="grid grid-cols-2 gap-2">${data.rejectedColors.map(item => `<li class="bg-red-100 text-red-700 p-2 rounded-md text-center">${item}</li>`).join('')}</ul>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="section-title mb-3">ALINMAYACAK RENKLER</h3>
-                                <ul class="grid grid-cols-2 gap-2">${data.rejectedColors.map(item => `<li class="bg-red-100 text-red-700 p-2 rounded-md text-center">${item}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                        <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
-                            ${sellerCard(data.bestSeller, "EN ÇOK SATAN MODEL")}
-                            ${sellerCard(data.leastSeller, "EN AZ SATAN MODEL")}
-                        </div>
-                        <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
-                             <div class="border rounded-xl p-4 bg-yellow-50">
+                            <div class="border rounded-xl p-4 bg-yellow-50 flex flex-col">
                                 <h3 class="section-title mb-3">KOLİ / ÇİFT</h3>
-                                <div class="flex justify-around items-center h-full">
+                                <div class="flex-grow flex justify-around items-center">
                                     <div class="text-center"><p class="text-3xl font-bold text-yellow-800">${data.boxCount}</p><p class="text-gray-600">Koli</p></div>
                                     <div class="text-center"><p class="text-3xl font-bold text-yellow-800">${data.pairCount}</p><p class="text-gray-600">Çift</p></div>
                                 </div>
                             </div>
-                            <div class="border rounded-xl p-4 bg-green-50">
+                            <div class="border rounded-xl p-4 bg-green-50 flex flex-col">
                                 <h3 class="section-title mb-3">FİRMALAR</h3>
-                                <ul class="grid ${data.companies.length > 2 ? 'grid-cols-2' : 'grid-cols-1'} gap-2 mt-4">${createList(data.companies)}</ul>
+                                <div class="flex-grow flex items-center">
+                                   <ul class="w-full grid ${data.companies.length > 3 ? 'grid-cols-2' : 'grid-cols-1'} gap-2">${createList(data.companies)}</ul>
+                                </div>
                             </div>
                             <div class="border rounded-xl p-4 bg-blue-50">
                                 <h3 class="section-title mb-3">ASORTİ</h3>
@@ -246,6 +317,22 @@
                                     <thead><tr><th class="border px-4 py-2">Numara</th><th class="border px-4 py-2">Adet</th></tr></thead>
                                     <tbody>${assortmentTable}</tbody>
                                 </table>
+                            </div>
+                        </div>
+
+                        <!-- BEST SELLERS ROW -->
+                        <div>
+                            <h3 class="section-title mb-4" id="cok-satan">EN ÇOK SATAN MODELLER</h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                                ${data.bestSeller.map(seller => createSingleSellerCard(seller)).join('')}
+                            </div>
+                        </div>
+
+                        <!-- LEAST SELLERS ROW -->
+                        <div>
+                            <h3 class="section-title mb-4" id="az-satan">EN AZ SATAN MODELLER</h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                                ${data.leastSeller.map(seller => createSingleSellerCard(seller)).join('')}
                             </div>
                         </div>
                     </div>`;
@@ -299,5 +386,4 @@
     </script>
 </body>
 </html>
-
 
